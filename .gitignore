@@ -1,0 +1,15 @@
+# IDEs
+.idea/
+*.iml
+.vscode/
+
+# Build
+target/
+dist/
+node_modules/
+
+# Logs
+*.log
+
+# Sistema
+.DS_Store
