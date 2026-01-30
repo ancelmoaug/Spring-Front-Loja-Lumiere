@@ -21,5 +21,5 @@ public class Fornecedor {
     @JoinColumn(name = "categoria_id")
     private Categoria categoria;
 
-    // getters e setters
+    // getters e setters//
 }

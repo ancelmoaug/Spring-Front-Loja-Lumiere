@@ -13,6 +13,6 @@ public class Categoria {
 
         private String descricao;
 
-        // getters e setters
+        // getters e setters//
 }
 
