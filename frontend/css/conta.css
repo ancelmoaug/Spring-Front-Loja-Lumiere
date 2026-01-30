@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.login-wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.login-image {
+    width: 50%;
+    height: 100vh;
+    background-image: url("./img/login.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-image {
+    width: 50%;
+    height: 100vh;
+    background-image: url("./img/login.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.text-new {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-size: 96px;
+    letter-spacing: 8px;
+    color: white;
+    z-index: 2;
+}
+
+.text-collection {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    font-size: 64px;
+    letter-spacing: 6px;
+    color: rgba(255, 255, 255, 0.85);
+    z-index: 1;
+}
+
+
+.login-form {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form > * {
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
+}
+
+.login-form h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.subtitulo {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 12px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+    outline: none;
+    margin-bottom: 25px;
+    width: 100%; /* 🔥 linhas maiores */
+    font-size: 14px;
+}
+
+button {
+    margin: 40px auto 0 auto;
+    padding: 14px;
+    width: 160px;
+    background-color: #d8b4a0;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.cadastro {
+    margin-top: 40px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.cadastro a {
+    color: #d8b4a0;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+#mensagemErro {
+    color: red;
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+}
