@@ -1,96 +1,95 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumière - Home</title>
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>LUMIÈRE | Minha Conta</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<header>
-    <div class="header-top">
-        <h1 class="logo">LUMIÈRE</h1>
 
-        <div class="search-container">
-            <input type="text" placeholder="Buscar" class="search-input">
-            <i class="fa fa-search search-icon"></i>
-        </div>
+<header class="top">
+  <div class="logo">LUMIÈRE</div>
 
-        <div class="header-icons">
-            <div class="icon-item"><i class="fa fa-sync-alt"></i> TROCAS E DEVOLUÇÕES</div>
-            <div class="icon-item"><i class="fa fa-credit-card"></i> CARTÕES</div>
-            <div class="icon-item cart">
-                <i class="fa fa-shopping-cart"></i>
-                <span class="badge">6</span>
-                CARRINHO
-            </div>
-            <a href="login.html" id="area-cliente" class="icon-item">
-                <i class="fa fa-user"></i> ENTRAR
-            </a>
-        </div>
-    </div>
+  <div class="search">
+    <input type="text" placeholder="Buscar">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </div>
 
-    <nav class="categories-nav">
-        <ul>
-            <li>LANÇAMENTOS</li>
-            <li>BLUSAS</li>
-            <li>SAIA</li>
-            <li>SHORT</li>
-            <li>CALÇA</li>
-            <li>MACAÇÃO</li>
-            <li>VESTIDO</li>
-            <li>CONJUNTO</li>
-            <li>BODY</li>
-        </ul>
-    </nav>
+  <div class="icons">
+    <span><i class="fa-solid fa-rotate"></i> TROCAS E DEVOLUÇÕES</span>
+    <span><i class="fa-regular fa-credit-card"></i> CARTÕES</span>
+    <span><i class="fa-solid fa-cart-shopping"></i> 0 CARRINHO</span>
+    <span class="active"><i class="fa-regular fa-user"></i> MINHA CONTA</span>
+  </div>
 </header>
 
-<section class="main-banner">
-    <div class="banner-content">
 
-    </div>
-</section>
+<nav class="menu menu-categorias">
+  <a>LANÇAMENTOS</a>
+  <a>BLUSA</a>
+  <a>SAIA</a>
+  <a>SHORT</a>
+  <a>CALÇA</a>
+  <a>MACACÃO</a>
+  <a>VESTIDO</a>
+  <a>CONJUNTO</a>
+</nav>
 
-<section class="benefits-bar">
-    <div class="benefit">
-        <p>FRETE GRÁTIS</p>
-        <small>Acima de <strong>R$ 300</strong></small>
-    </div>
-    <div class="benefit">
-        <p>PARCELAMENTO</p>
-        <small>Em até <strong>3X</strong> sem juros</small>
-    </div>
-    <div class="benefit">
-        <p>TROCA</p>
-        <small>Prazo de <strong>30</strong> dias</small>
-    </div>
-</section>
 
-<section class="products-grid">
-    <div class="product-card">
-        <img src="img/produto1.jpg" alt="Produto 1">
-        <h4>Vestido Satin Black</h4>
-        <p class="price">R$ 259,90</p>
-    </div>
-    <div class="product-card">
-        <img src="img/produto2.jpg" alt="Produto 2">
-        <h4>Blazer Slim Fit</h4>
-        <p class="price">R$ 489,00</p>
-    </div>
-    <div class="product-card">
-        <img src="img/produto3.jpg" alt="Produto 3">
-        <h4>Camisa de Seda Pearl</h4>
-        <p class="price">R$ 199,00</p>
-    </div>
-    <div class="product-card">
-        <img src="img/produto4.jpg" alt="Produto 4">
-        <h4>Blusa Cropped Off-White</h4>
-        <p class="price">R$ 129,90</p>
-    </div>
-</section>
+<main class="content">
 
-<script src="js/home.js"></script>
+  <div class="title">
+    <i class="fa-regular fa-user"></i>
+    <span>MINHA CONTA</span>
+  </div>
+
+ 
+  <h4>Dados Pessoais</h4>
+
+  <div class="box">
+    <div class="line"><span>NOME</span><span>Joana Farias Barreto</span></div>
+    <div class="line"><span>DATA DE NASCIMENTO</span><span>23/07/1997</span></div>
+    <div class="line"><span>CPF</span><span>***.***.***-89</span></div>
+    <div class="line">
+      <span>ENDEREÇO</span>
+      <span>Estrada do Marrão, 161, Povoado de São Bento, 44990-000, Barra do Mendes, Bahia</span>
+    </div>
+    <div class="line"><span>TELEFONE</span><span>74998345803</span></div>
+  </div>
+
+  <div class="actions">
+    <button><i class="fa-solid fa-pen"></i> Editar Dados</button>
+    <button><i class="fa-solid fa-arrow-right-from-bracket"></i> Sair</button>
+  </div>
+
+  
+  <h4>Cartões de pagamento</h4>
+
+  
+  <div class="box card cartao">
+    <img src="https://cdn-icons-png.flaticon.com/512/633/633611.png">
+    <span>BANCO: INTER</span>
+    <span>AGÊNCIA: 0001</span>
+    <span>Nº DA CONTA: 28251173-7</span>
+    <span>TIPO: CONTA CORRENTE</span>
+
+    
+    <button class="trash btn-excluir">
+      <i class="fa-solid fa-trash"></i>
+    </button>
+  </div>
+
+  <button class="add">
+    <i class="fa-solid fa-plus"></i> Adicionar Cartão
+  </button>
+
+</main>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
