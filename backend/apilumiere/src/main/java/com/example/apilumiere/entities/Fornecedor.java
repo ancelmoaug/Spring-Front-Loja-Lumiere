@@ -1,4 +1,4 @@
-package com.example.apilumiere.domain;
+package com.example.apilumiere.entities;
 
 import jakarta.persistence.*;
 

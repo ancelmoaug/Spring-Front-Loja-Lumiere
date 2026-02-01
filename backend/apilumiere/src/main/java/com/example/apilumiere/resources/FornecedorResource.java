@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.apilumiere.domain.Fornecedor;
+import com.example.apilumiere.entities.Fornecedor;
 import com.example.apilumiere.services.FornecedorService;
 
 @RestController

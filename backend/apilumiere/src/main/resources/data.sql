@@ -12,7 +12,7 @@ INSERT INTO usuarios (
     telefone_id, endereco_id, dados_bancarios_id
 ) VALUES (
     1, 'Wild', 'Barreto', '123456',
-    '2000-05-10', '12345678900', 'wildbarreto@email.com',
+    '1999-05-10', '12345678989', 'wildbarreto@email.com',
     1, 1, 1
 );
 

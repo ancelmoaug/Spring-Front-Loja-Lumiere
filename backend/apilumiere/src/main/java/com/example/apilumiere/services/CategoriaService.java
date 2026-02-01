@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.example.apilumiere.domain.Categoria;
+import com.example.apilumiere.entities.Categoria;
 import com.example.apilumiere.repositories.CategoriaRepository;
 
 @Service
