@@ -39,7 +39,6 @@ public class Funcionario extends Usuario {
     public LocalDate getDataAdmissao() {
         return dataAdmissao;
     }
-
     public void setDataAdmissao(LocalDate dataAdmissao) {
         this.dataAdmissao = dataAdmissao;
     }

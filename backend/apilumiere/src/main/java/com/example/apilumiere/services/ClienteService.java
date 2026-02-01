@@ -1,8 +1,8 @@
 package com.example.apilumiere.services;
 
 import com.example.apilumiere.entities.Cliente;
-import com.example.apilumiere.entities.Usuario;
 import com.example.apilumiere.repositories.ClienteRepository;
+import com.example.apilumiere.repositories.UsuarioRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,9 +13,12 @@ import java.util.List;
 public class ClienteService {
 
     private final ClienteRepository clienteRepository;
+    private final UsuarioRepository usuarioRepository;
 
-    public ClienteService(ClienteRepository clienteRepository) {
+    public ClienteService(ClienteRepository clienteRepository,
+                          UsuarioRepository usuarioRepository) {
         this.clienteRepository = clienteRepository;
+        this.usuarioRepository = usuarioRepository;
     }
 
     public Cliente inserir(Cliente cliente) {
@@ -40,16 +43,20 @@ public class ClienteService {
     }
 
     public Cliente buscarPorEmail(String email) {
-        return clienteRepository.findByEmail(email)
+        return (Cliente) usuarioRepository.findByEmail(email)
                 .orElseThrow(() -> new RuntimeException("Cliente não encontrado"));
     }
 
     public Cliente buscarPorCpf(String cpf) {
-        return clienteRepository.findByCpf(cpf)
+        return (Cliente) usuarioRepository.findByCpf(cpf)
                 .orElseThrow(() -> new RuntimeException("Cliente não encontrado"));
     }
 
     public List<Cliente> buscarPorNome(String nome) {
-        return clienteRepository.findByNomeContainingIgnoreCase(nome);
+        return usuarioRepository.findByNomeContainingIgnoreCase(nome)
+                .stream()
+                .filter(u -> u instanceof Cliente)
+                .map(u -> (Cliente) u)
+                .toList();
     }
 }
