@@ -4,7 +4,7 @@ VALUES (1, 'BA', 'Irecê', '44900-000', 'Centro', 'Rua A', '123', 'Apto 1');
 INSERT INTO telefones (id, numero)
 VALUES (1, '74999999999');
 
-INSERT INTO dados_bancarios (id, codigo_agencia, numero_conta, codigo_banco)
+INSERT INTO dados_bancarios (id, codigoAgencia, numeroConta, codigoBanco)
 VALUES (1, '1234', '56789-0', '001');
 
 INSERT INTO usuarios (

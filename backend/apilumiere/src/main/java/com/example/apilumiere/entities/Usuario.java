@@ -16,6 +16,7 @@ public class Usuario {
     private String sobrenome;
     private String senha;
 
+    @Column(name = "data_de_nascimento")
     private LocalDate dataDeNascimento;
 
     @Column(unique = true)
