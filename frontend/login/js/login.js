@@ -21,7 +21,7 @@ document.getElementById("loginForm").addEventListener("submit", async function (
 
         localStorage.setItem("cliente", JSON.stringify(cliente));
 
-        window.location.href = "../index.html";
+        window.location.href = "../../home/index.html";
 
     } catch (error) {
         document.getElementById("mensagemErro").innerText =

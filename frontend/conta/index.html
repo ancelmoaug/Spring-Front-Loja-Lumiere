@@ -9,7 +9,6 @@
 </head>
 <body>
 
-
 <header class="top">
   <div class="logo">LUMIÈRE</div>
 
@@ -26,7 +25,6 @@
   </div>
 </header>
 
-
 <nav class="menu menu-categorias">
   <a>LANÇAMENTOS</a>
   <a>BLUSA</a>
@@ -38,7 +36,6 @@
   <a>CONJUNTO</a>
 </nav>
 
-
 <main class="content">
 
   <div class="title">
@@ -46,37 +43,30 @@
     <span>MINHA CONTA</span>
   </div>
 
- 
   <h4>Dados Pessoais</h4>
 
   <div class="box">
-    <div class="line"><span>NOME</span><span>Wild Barreto</span></div>
-    <div class="line"><span>DATA DE NASCIMENTO</span><span>1999/05/10</span></div>
-    <div class="line"><span>CPF</span><span>***.***.***-89</span></div>
-    <div class="line">
-      <span>ENDEREÇO</span>
-      <span>Rua A, Apto 1, 123, Centro, 44900-000, Irecê, BA</span>
-    </div>
-    <div class="line"><span>TELEFONE</span><span>(74) 99999-9999</span></div>
+    <div class="line"><span>NOME</span><span id="nome"></span></div>
+    <div class="line"><span>DATA DE NASCIMENTO</span><span id="dataNascimento"></span></div>
+    <div class="line"><span>CPF</span><span id="cpf"></span></div>
+    <div class="line"><span>ENDEREÇO</span><span id="endereco"></span></div>
+    <div class="line"><span>TELEFONE</span><span id="telefone"></span></div>
   </div>
 
   <div class="actions">
-    <button><i class="fa-solid fa-pen"></i> Editar Dados</button>
-    <button><i class="fa-solid fa-arrow-right-from-bracket"></i> Sair</button>
+    <button id="editar"><i class="fa-solid fa-pen"></i> Editar Dados</button>
+    <button id="sair"><i class="fa-solid fa-arrow-right-from-bracket"></i> Sair</button>
   </div>
 
-  
   <h4>Cartões de pagamento</h4>
 
-  
   <div class="box card cartao">
     <img src="https://cdn-icons-png.flaticon.com/512/633/633611.png">
-    <span>BANCO: INTER</span>
-    <span>AGÊNCIA: 1234</span>
-    <span>Nº DA CONTA: 56789-0</span>
+    <span>BANCO: <span id="banco"></span></span>
+    <span>AGÊNCIA: <span id="agencia"></span></span>
+    <span>Nº DA CONTA: <span id="conta"></span></span>
     <span>TIPO: CONTA CORRENTE</span>
 
-    
     <button class="trash btn-excluir">
       <i class="fa-solid fa-trash"></i>
     </button>
@@ -88,8 +78,7 @@
 
 </main>
 
-
 <script src="script.js"></script>
-
 </body>
 </html>
+
